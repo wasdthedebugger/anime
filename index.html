@@ -13,17 +13,15 @@
 <body>
     <div class="main center">
         <script>
-    var url_string = window.location.href; 
-    var url = new URL(url_string);
-    var ep = url.searchParams.get("ep");
-
-            if((ep>=1)&&(ep<=37)){
-                document.write("<video width='1000px' controls><source src='https://hamroopportunity.com/utils/deathnote/"+ep+".mp4' type='video/mp4'></video>");
-            } else {
-                document.write("PLEASE CHOOSE AN EPISODE");
+            var i = 1;
+            while (i<=37){
+                document.write("<a href='vid.html?ep="+i+"'><button>"+i+"</button></a>");
+                    if (i % 5 == 0) {
+                        document.write("<br>");
+                    }
+                i++;
             }
-        
-        </script>
+            </script>
     </div>
 </body>
 <script>
