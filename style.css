@@ -37,9 +37,13 @@ button:hover{
 }
 
 .main{
-    border: 10px solid gray;
+    border: 5px solid gray;
     padding: 10px;
     height: fit-content;
     width: fit-content;
     background-image: url("https://m.media-amazon.com/images/M/MV5BNjRiNmNjMmMtN2U2Yi00ODgxLTk3OTMtMmI1MTI1NjYyZTEzXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg");
+}
+
+.main video{
+    border: none;
 }
