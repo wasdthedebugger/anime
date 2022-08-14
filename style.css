@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: white;
+}
+
+.banner img{
+    height: 395px;
+    margin-right: 10px;
+}
+
+button{
+    padding: 5px 5px 5px 5px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+
+button:hover{
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    color: gray;
+    cursor: pointer;
+}
+
+.center video{
+    border: 1px solid gray;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.main{
+    border: 10px solid gray;
+    padding: 10px;
+    height: fit-content;
+    width: fit-content;
+    background-image: url("https://m.media-amazon.com/images/M/MV5BNjRiNmNjMmMtN2U2Yi00ODgxLTk3OTMtMmI1MTI1NjYyZTEzXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg");
+}

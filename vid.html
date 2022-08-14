@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6, user-scalable=no">
+    <title>Death Note</title>
+</head>
+<body>
+    <div class="main center">
+        <script>
+    var url_string = window.location.href; 
+    var url = new URL(url_string);
+    var ep = url.searchParams.get("ep");
+
+            if((ep>=1)&&(ep<=37)){
+                document.write("<video width='1000px' controls><source src='https://hamroopportunity.com/utils/deathnote/"+ep+".mp4' type='video/mp4'></video>");
+            } else {
+                document.write("PLEASE CHOOSE AN EPISODE");
+            }
+        
+        </script>
+    </div>
+</body>
+</html>
