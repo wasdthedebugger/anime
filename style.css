@@ -27,10 +27,6 @@ button:hover{
     cursor: pointer;
 }
 
-.center video{
-    border: 1px solid gray;
-}
-
 .center{
     position: absolute;
     top: 50%;
