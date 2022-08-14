@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0.6, user-scalable=no">
-    <title>Death Note</title>
+    <meta name="theme-color" content="gray">
+    <link rel="apple-touch-icon" href="icons/192.png">
+    <title>ANIKAS</title>
 </head>
-
 <body>
     <div class="main center">
-        <div class="buttons">
-<script>
-var i = 1;
-while (i<=37){
-    document.write("<a href='vid.html?ep="+i+"'><button>"+i+"</button></a>");
-        if (i % 5 == 0) {
-            document.write("<br>");
-        }
-    i++;
-}
-</script>
-        </div>
+        <script>
+    var url_string = window.location.href; 
+    var url = new URL(url_string);
+    var ep = url.searchParams.get("ep");
+
+            if((ep>=1)&&(ep<=37)){
+                document.write("<video width='1000px' controls><source src='https://hamroopportunity.com/utils/deathnote/"+ep+".mp4' type='video/mp4'></video>");
+            } else {
+                document.write("PLEASE CHOOSE AN EPISODE");
+            }
+        
+        </script>
     </div>
 </body>
+<script>
+    if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('sw.js').then(registration => {
+            console.log("SW Registered");
+            console.log(registration);
+        }).catch(error => {
+            console.log("SW Registration Failed");
+            console.log(error);
+        });
+    }
+</script>
 </html>
